@@ -1,0 +1,296 @@
+
+body{
+    background-color: #660708;
+    font-family: "Roboto Slab", serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar{
+    background-color: #D3D3D3;
+}
+.navbar .nav-item a.nav-link{
+    color: rgba(0, 0, 0, .55);
+}
+
+.navbar .nav-item a.nav-link:hover{
+    border-color: #0B090A;
+    border-radius: 1px;
+    border-width: 1px;
+    border-style: solid;
+}
+.nav-item button{
+    margin: 0 10px;
+}
+
+.leading_page{
+    margin: 150px 10px 20px 150px;
+    display: flex;
+}
+.text_large{
+    font-size: 160px;
+    color: #B1A7A6;
+    font-family: "Italianno", cursive;
+}
+.leading_text{
+    color: #ffffff;
+}
+.leading_text ul{
+    list-style-type: disc;
+}
+.leading_text ul{
+    list-style-type: circle;
+}
+.image-leading{
+    margin-left: 100px;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+.rotating-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: spin 12s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+@media(max-width: 800px){
+    .leading_page{
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 0px;
+    }
+    .image-leading{
+        margin-left: 0px;
+        width: 300px;
+        height: 300px;
+    }
+    .text_large{
+        font-size: 90px;
+    }
+    .fixed-top {
+        position: static;
+        }
+        .nav-var {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        transition: top 0.3s;
+        }
+    }
+
+@media(max-width: 1115px){
+    .text_large{
+        font-size: 110px;
+    }
+}
+
+.button_GO a{
+    border-radius: 50px;
+    margin-bottom: 40px;
+}
+
+.most_catgory{
+    background-color: #A4161A;
+    margin-top: 50px;
+}
+
+.most_catgory h1{
+    font-size: 90px;
+    text-align: center;
+    color: #161A1D;
+}
+.most_catgory p{
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+.most_catgory .card{
+    background-color: #161A1D;
+    border-radius: 50px;
+    height: 600px;
+}
+
+@media(max-width: 1115px){
+    .most_catgory h1{
+        font-size: 50px;
+    }
+}
+@media(max-width: 800px){
+    .most_catgory{
+        margin-top: 0px;
+    }
+    .most_catgory h1{
+        font-size: 40px;
+    }
+    .most_catgory .card{
+        height: 700px;
+    }
+}
+
+.most_product{
+    background-color: #ba181b;
+    margin-top: 50px;
+}
+.most_product h1{
+    font-size: 90px;
+    text-align: center;
+    color: #0B090A;
+}
+.most_product p{
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+.most_product .card{
+    background-color: #0B090A;
+    height: 600px;
+}
+.most_product .card .card-title{
+    font-size: 30px;
+    color: #E5383B;
+}
+.most_product .card {
+    align-items: center;
+    border-radius: 60px;
+}
+@media( max-width: 800px){
+    .most_product{
+        margin-top: 0px;
+    }
+    .most_product h1{
+        font-size: 40px;
+    }
+    .most_product .card{
+        height: 700px;
+    }
+}
+.meal{
+    background-color: #E5383B;
+    margin-top: 50px;
+
+}
+.meal h1{
+    font-size: 90px;
+    text-align: center;
+    color: #D3D3D3;
+}
+.meal p{
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+.meal img{
+    border-radius: 50%;
+    width: 450px;
+}
+@media( max-width: 800px){
+    .meal{
+        margin-top: 0px;
+    }
+    .meal h1{
+        font-size: 40px;
+    }
+    .meal img{
+        width :350px;
+        display: flex;
+        align-content: center;
+    }
+
+}
+
+footer{
+    background-color: #D3D3D3;
+
+}
+.order h1 {
+    text-align: center;
+    color:#ffffff;
+    margin-top: 100px;
+}
+.order table input{
+    width: 50px;
+}
+
+/* admin */
+.admin-catgories{
+    background-color: #A4161A;;
+}
+.admin-catgories h1 {
+    font-size: 90px;
+    text-align: center;
+    color: #161A1D;
+}
+.admin-catgories table{
+    background-color: #ffffff;
+}
+@media( max-width: 800px ){
+    .admin-catgories h1{
+        font-size: 40px;
+    }
+}
+
+
+.admin-meal{
+    background-color: #ba181b;;
+}
+.admin-meal h1 {
+    font-size: 60px;
+    text-align: center;
+    color: #161A1D;
+}
+.admin-meal table{
+    background-color: #ffffff;
+}
+@media( max-width: 800px ){
+    .admin-meal h1{
+        font-size: 30px;
+    }
+}
+@media( max-width: 500px ){
+   .admin-meal table .no-mobile{
+    display: none;
+   }
+}
+
+.sales{
+    margin-top: 0px;
+    background-color: #E5383B;
+}
+.sales h1{
+    text-align: center;
+    color: #B1A7A6;
+    font-size: 70px;
+}
+.admin-sales h1{
+    text-align: center;
+    color: #ffffff;
+    font-size: 70px;
+}
+
+@media( max-width: 800px ){
+    .sales h1{
+        font-size: 30px;
+    }
+    .admin-sales h1{
+
+        font-size: 40px;
+    }
+}
+
+.admin-sales table{
+    background-color: #ffffff;
+}
+
+
